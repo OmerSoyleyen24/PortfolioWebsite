@@ -1,0 +1,42 @@
+#about {
+  margin-bottom: 200px;
+}
+
+#about h2 {
+  font-size: 40px;
+  font-weight: normal;
+}
+
+#about hr {
+  border: 1px solid black;
+  margin: 20px 0;
+}
+
+#about p {
+  font-size: 1.5rem;
+  text-align: justify;
+  line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+  #about {
+    margin-bottom: 150px;
+    padding: 0 40px;
+  }
+
+  #about h2 {
+    font-size: 40px;
+    font-weight: normal;
+  }
+
+  #about hr {
+    border: 1px solid black;
+    margin: 20px 0;
+  }
+
+  #about p {
+    font-size: 1.5rem;
+    text-align: justify;
+    line-height: 1.5;
+  }
+}

@@ -1,0 +1,31 @@
+aside {
+    position: fixed;
+    top: calc(50% - 80px);
+    left: 50px;
+}
+
+.social-media-list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 50px;
+}
+
+.social-media-list-item {
+    font-size: 2rem;
+}
+
+.bi-linkedin {
+    background-color: white;
+    color: #0068B5;
+}
+
+.bi-linkedin:hover {
+    background-color: white;
+    color: #0058B5;
+}
+
+@media (max-width:1400px) {
+    aside {
+        display: none;
+    }
+}

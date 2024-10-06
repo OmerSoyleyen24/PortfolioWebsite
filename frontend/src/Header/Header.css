@@ -1,0 +1,148 @@
+
+#header {
+  height: 80px;
+  display: flex;
+  align-items: center;
+  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.25);
+}
+
+#header-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+#header-left {
+  font-size: 1.5rem;
+  padding-left: 20px;
+}
+
+#header-right {
+  display: flex;
+  align-items: center;
+  visibility: visible;
+  padding-right: 20px;
+}
+
+#header-right .header-right-list {
+  display: flex;
+  align-items: center;
+  column-gap: 20px;
+}
+
+#header-right #header-mobile,
+#header-right #header-mobile-close {
+  display: none;
+}
+
+#header-right .header-right-list-item {
+  font-size: 1.125rem;
+}
+
+#header-right .header-right-list-item i {
+  font-size: 1rem;
+}
+
+#header-right .header-right-list-item a {
+  padding-bottom: 5px;
+}
+
+#header-right .header-right-list-item a:hover {
+  border-bottom: 1px solid #007BFF;
+  color: #007BFF;
+  transition: border-bottom .2s ease, color .2s ease;
+}
+
+#header-right .header-right-list-item a.active {
+  border-bottom: 2px solid #007BFF;
+  color: #007BFF;
+}
+
+@media (min-width:768px){
+  #header-right{
+    visibility: visible !important;
+  }
+}
+
+@media (max-width: 768px) {
+  #header {
+    position: relative;
+  }
+
+  #header-left {
+    padding-left: 40px;
+  }
+
+  #header-right {
+    position: fixed;
+    height: 100vh;
+    top: 0;
+    right: 0;
+    visibility: hidden;
+    padding-right: 0px;
+    margin-top: 0 !important;
+    background-color: #F8F9FA;
+    box-shadow: 2px 0px 5px 0px rgba(0, 0, 0, 0.25);
+    border-left: 1px solid black;
+  }
+
+  #header-right .header-right-list {
+    flex-direction: column;
+    row-gap: 40px;
+  }
+
+  #header-right .header-right-list-item {
+    row-gap: 40px;
+    max-width: 100%;
+    padding: 0 40px;
+  }
+
+  #header-right .header-right-list-item i {
+    display: none;
+  }
+
+  #header-right #header-mobile {
+    font-size: 1.75rem;
+    display: block;
+    position: absolute;
+    top: 3.5%;
+    right: 22px;
+    visibility: visible;
+    margin-bottom: 20px;
+  }
+
+  #header-right #header-mobile-close {
+    display: block;
+    position: absolute;
+    top: 3.75%;
+    right: 0px;
+    visibility: hidden;
+  }
+}
+
+@media (max-width: 500px) {
+  #header-left {
+    padding-left: 20px;
+    font-size: 1.25rem;
+  }
+
+  #header-right {
+    margin-top: 249.5px;
+  }
+
+  #header-right .header-right-list-item {
+    font-size: 1rem;
+    padding: 0 20px;
+  }
+
+  #header-right .header-mobile,
+  #header-right .header-mobile-close {
+    font-size: 1.25rem;
+  }
+
+  #header-right .header-mobile-close {
+    top: 10%;
+    right: 0px;
+  }
+}
