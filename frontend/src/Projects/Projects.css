@@ -1,3 +1,69 @@
+#projects {
+  padding: 80px 20px;
+  background: #0f172a;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 50px;
+  color: #f8fafc;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+/* CARD */
+.project-card {
+  background: #020617;
+  border-radius: 16px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
+}
+
+/* IMAGE */
+.project-image {
+  width: 100%;
+  height: 180px;
+  overflow: hidden;
+}
+
+.project-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+.project-card:hover .project-image img {
+  transform: scale(1.05);
+}
+
+/* INFO */
+.project-info {
+  padding: 20px;
+  text-align: center;
+  flex-grow: 1;
+}
+
+.project-info h3 {
+  font-size: 1.1rem;
+  color: #e5e7eb;
+}
+
+/* TOGGLE BUTTON */
 .project-toggle {
   margin-top: 12px;
   background: transparent;
@@ -15,10 +81,10 @@
   color: #020617;
 }
 
+/* DESCRIPTION */
 .project-description {
   margin-top: 14px;
   font-size: 0.95rem;
   line-height: 1.5;
   color: #cbd5f5;
-  white-space: pre-line;
 }
