@@ -1,0 +1,48 @@
+/* SECTION */
+#about {
+  padding: 80px 20px 200px;
+  background: #0f172a;
+}
+
+/* WRAPPER (opsiyonel ama önerilir) */
+.about-wrapper {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* TITLE */
+#about h2 {
+  font-size: 2.4rem;
+  font-weight: 400;
+  margin-bottom: 30px;
+  color: #f8fafc;
+}
+
+/* TEXT */
+#about p {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: #cbd5f5;
+  text-align: justify;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  #about {
+    padding: 60px 30px 150px;
+  }
+
+  #about h2 {
+    font-size: 2rem;
+  }
+
+  #about p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  #about {
+    padding: 50px 20px 120px;
+  }
+}
