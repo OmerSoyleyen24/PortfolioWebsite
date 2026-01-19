@@ -10,6 +10,7 @@ app.use(bodyParser.json());
 app.post('/send-email', async (req, res) => {
   const { name, email, message } = req.body;
 
+
   const transporter = nodemailer.createTransport({
     service: 'gmail',
     auth: {
@@ -17,13 +18,13 @@ app.post('/send-email', async (req, res) => {
       pass: 'cpib owzg zlyv dmnu'
     }
   });
-
+  
   const mailOptions = {
-   from: 'omersoyleyen06102024@gmail.com',
-   replyTo: email,
-   to: 'omersoyleyen06102024@gmail.com',
-   subject: `Yeni Mesaj: ${name}`,
-   text: message
+    from: 'omersoyleyen06102024@gmail.com',
+    replyTo: email,
+    to: 'omersoyleyen06102024@gmail.com',
+    subject: `Yeni Mesaj: ${name}`,
+    text: message
   };
 
   try {
