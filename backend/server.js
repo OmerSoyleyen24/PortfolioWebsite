@@ -1,5 +1,4 @@
 import express from 'express';
-import nodemailer from 'nodemailer';
 import bodyParser from 'body-parser';
 import cors from 'cors';
 import { Resend } from 'resend';
@@ -13,6 +12,7 @@ app.post('/send-email', async (req, res) => {
 
   try {
     const resend = new Resend('re_VmkTw8ez_CxNPV12z7KPBW6WMdoZ9rYcp');
+
     await resend.emails.send({
       from: 'Contact Form <onboarding@resend.dev>',
       to: ['omersoyleyen24@outlook.com'],
@@ -30,16 +30,6 @@ app.post('/send-email', async (req, res) => {
     res.status(500).json({ error: 'Mail gönderilemedi' });
   }
 });
-
-
-  try {
-    const info = await transporter.sendMail(mailOptions);
-    console.log('Mail gönderildi:', info.response);
-    res.status(200).json({ message: 'Mesajınız gönderildi!' });
-  } catch (error) {
-    console.error('Mail gönderim hatası:', error);
-    res.status(500).json({ error: error.toString() });
-  }
 
 const PORT = 5000;
 app.listen(PORT, () => {
