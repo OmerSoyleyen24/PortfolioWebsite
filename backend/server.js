@@ -19,10 +19,11 @@ app.post('/send-email', async (req, res) => {
   });
 
   const mailOptions = {
-    from: email,
-    to: 'omersoyleyen06102024@gmail.com',
-    subject: `Yeni Mesaj: ${name}`,
-    text: message
+  from: 'omersoyleyen06102024@gmail.com',
+  replyTo: email,
+  to: 'omersoyleyen06102024@gmail.com',
+  subject: `Yeni Mesaj: ${name}`,
+  text: message
   };
 
   try {
