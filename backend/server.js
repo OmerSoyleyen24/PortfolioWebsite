@@ -40,7 +40,6 @@ app.post('/send-email', async (req, res) => {
     console.error('Mail gönderim hatası:', error);
     res.status(500).json({ error: error.toString() });
   }
-});
 
 const PORT = 5000;
 app.listen(PORT, () => {
