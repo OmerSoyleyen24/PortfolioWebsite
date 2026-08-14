@@ -1,0 +1,63 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* BASE */
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Ubuntu, sans-serif;
+  background: #0f172a;
+  color: #f8fafc;
+}
+
+/* CONTAINER */
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* HEADINGS */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  color: #f8fafc;
+}
+
+/* LINKS */
+a {
+  color: inherit;          /* 🔥 EN ÖNEMLİ SATIR */
+  text-decoration: none;
+}
+
+/* LISTS */
+ul,
+li {
+  list-style: none;
+}
+
+/* BUTTONS */
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font: inherit;
+  color: inherit;
+}
+
+/* FOOTER (opsiyonel) */
+.footer {
+  background: #020617;
+  color: #f8fafc;
+}
